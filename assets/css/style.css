@@ -3,6 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+  color: yellow;
+}
+.app{
+  display: grid;
+  grid-template-areas: 
+    "cabecalho"
+    "conteudo-principal"
+    "cardapio-geral"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 55% 45% 50px;
+
+}
 header{
     background: gray;
 }
@@ -13,18 +27,14 @@ header{
     margin: 10px;
   }
   
-  .bar {
-    display: block;
-    height: 2px;
-    width: 20px;
-    border-radius: 2px;
-    background-color: #333;
-    margin-top: 5px;
-  }
+  
   
   /* Menu styles */
   .menu {
-    display: none;
+   display: flex;
+   display: flex;
+   justify-content: space-around;
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,12 +44,14 @@ header{
   }
   
   .menu li {
+    
     text-align: center;
     margin: 10px 0;
   }
   
   .menu li a {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -51,14 +63,15 @@ header{
     width: 800px;
     height: 300px;
   }
+ 
   .img-burguer{
     width: 400px;
+    height: 300px;
   }
 
   main{
-    
     padding: 3vh;
-    background-color: yellow;
+    background-color: rgba(226, 226, 37, 0.514);
   }
 
   .localizacao{
@@ -75,6 +88,14 @@ header{
   }
   .mapa{
     padding: 2vh;
+  }
+
+  #btn-delivery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40vh ;
+    padding: 3vh;
   }
   
   /* Media query for responsive design */

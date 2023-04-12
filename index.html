@@ -12,15 +12,10 @@
     <link rel="stylesheet" href="assets/css/cardapio.css">
     <title>burguer</title>
 </head>
-<body>
+<body class="app">
 
-   <header>
+   <header class="cabecalho">
     <nav>
-        <div class="menu-icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -30,14 +25,15 @@
       </nav>
    </header>
 
-   <main>
+   <main class="conteudo-principal">
     <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><img src="assets/img/mulher-comendo-hamburguer-de-carne.jpg" class="img-burguer" alt=""></div>
     <div class="swiper-slide"><img src="assets/img/hamburgueres-de-vista-frontal-em-um-carrinho.jpg" class="img-burguer" alt=""></div>
-    <div class="swiper-slide"><img src="assets/img/pexels-rajesh-tp-1633578.jpg" class="img-burguer" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/vista-lateral-duplo-cheeseburger-com-rissois-de-carne-grelhada-queijo-e-folha-de-alface-entre-bolos-de-hamburguer.jpg" class="img-burguer" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/grande-cheeseburger-e-batatas-fritas.jpg" class="img-burguer" alt=""></div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -69,7 +65,7 @@
         </div>
    </section>
 
-   <section id="cardapio">
+   <section class="cardapio-geral">
     <div class="cardapio">
       <div class="destaques-burguer caixa">
         <h3 class="destaques__titulo">X-mega</h3>
@@ -80,15 +76,16 @@
         <div class="destaques-burguer-sec caixa">
         <h3 class="destaques__titulo">X-egg</h3>
         </div>
-        <div class="destaques-burguer-sec caixa">
-        <h3 class="destaques__titulo">X-tudo</h3>
-        </div>
-        <div class="destaques-burguer-sec caixa">
-        <h3 class="destaques__titulo">X-tudo two</h3>
-        </div>
-        
-
     </div>
+
+    
    </section>
+   <button id="btn-delivery">
+    <a href="#">Delivery</a>
+  </button>
+
+   <footer class="rodape">
+
+   </footer>
 </body>
 </html>

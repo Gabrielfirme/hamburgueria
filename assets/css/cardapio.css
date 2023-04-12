@@ -3,9 +3,45 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 33.33% 33.33% 33.33%;
     height: calc(100vh - 50px);
-    grid-gap:.2rem
+   
+}
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cardapio-geral{
+    background: red;
+    height: 35rem;
+    padding: 2vh;
+}
+.destaques__titulo{
+    background: rgba(128, 128, 128, 0.267);
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+    color:#fff;
 }
 .destaques-burguer{
-    background: url(../img/pexels-rajesh-tp-1633578.jpg) center/cover no-repeat;
+    background: url(../img/mulher-comendo-hamburguer-de-carne.jpg) center/cover no-repeat;
     grid-column: 1/4;
+    grid-row: 1/4;
+}
+.destaques-burguer-sec:nth-child(2){
+    background: url(../img/pexels-rajesh-tp-1633578.jpg) center/cover no-repeat;
+    grid-column:4/5;
+    grid-row: 1/2;
+
+}
+.destaques-burguer-sec:nth-child(3){
+    background: url(../img/transferir.jpg) center/cover no-repeat;
+    grid-column:4/5;
+    grid-row: 2/4;
+
+}
+.destaques-burguer-sec:nth-child(4){
+    background: url(../img/transferir.jpg) center/cover no-repeat;
+    grid-column:1/2;
+    grid-row: 4/6;
+
 }
